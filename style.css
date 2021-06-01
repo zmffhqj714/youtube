@@ -1,3 +1,41 @@
-li{
-  text-decoration: none;
+
+header{
+  background-color: black;
+}
+.fa-youtube{
+  color: red
+}
+Emphasis{
+  color: blanchedalmond;
+}
+.fa-search {
+  color: blanchedalmond;
+  position: right;
+}
+.fa-ellipsis-v{
+  color: blanchedalmond;
+}
+.searchspan{
+  justify-items: right ;
+}
+.hashtag{
+  font-size: 2px;
+}
+.views{
+  font-size: 1px;
+}
+.button li{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 2px;
+}
+.uploader{
+  display: flex;
+  list-style: none;
+  font-size: 2px;
+}
+.upnext{
+  list-style: none;
+  font-size: 8px;
 }
