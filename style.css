@@ -10,13 +10,12 @@ Emphasis{
 }
 .fa-search {
   color: blanchedalmond;
-  position: right;
 }
 .fa-ellipsis-v{
   color: blanchedalmond;
 }
-.searchspan{
-  justify-items: right ;
+.main{ 
+  list-style: none;
 }
 .hashtag{
   font-size: 2px;
@@ -24,7 +23,7 @@ Emphasis{
 .views{
   font-size: 1px;
 }
-.button li{
+.button{
   display: flex;
   justify-content: space-between;
   list-style: none;
