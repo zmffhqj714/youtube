@@ -1,49 +1,71 @@
-<!DOCTYPE html> 화면크기 자체를 아예 모바일로 설정하는법, 내가할수 있는 건 다 했고 영상보기만하고 다시 따라 만들기
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=20 height=480, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="style.css">
   <title>bontube</title>
 </head>
-
-<header>
-  <script src="https://kit.fontawesome.com/d65e7d19b8.js" crossorigin="anonymous"></script>
-  <i class="fab fa-youtube"></i>
-  <Emphasis>bontube㉿</Emphasis>
-  <i class="searchspan"></i> 
-  <i class="fas fa-search"></i>
-  <i class="fas fa-ellipsis-v"></i>
+<script src="https://kit.fontawesome.com/d65e7d19b8.js" crossorigin="anonymous"></script>
+<body>
+<header class="header">
+  <div>
+    <i class="fab fa-youtube"></i>
+    <button class="sitename">bontube</button>
+  </div>
+  <div>
+    <i class="searchspan"></i>
+    <button><i class="fas fa-search"></i></button>
+    <button><i class="fas fa-ellipsis-v"></i></button>
+  </div>
 </header>
 
-<div class="main">
-  <iframe width="400" height="250" src="https://www.youtube.com/embed/yM0pQwxNSMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <li class="hashtag">해시태그 구현 데이터#</li>
-  <li class="subject">lovely peppa pig makes me feel happy <i class="fas fa-sort-down"></i></li>
-  <li class="views">뷰수, 현재일자 기준으로 지난 게시시간</li>
+<section class="main_screen">
+  <iframe class="iframe"  src="/video/KakaoTalk_20210603_221111651.mp"></iframe>
+  <div class="metadata">
+    <button>#lol lol </button>
+    <button>#life</button>   
+    <button>#is alone</button>
+  </div>
+  <div>
+  <span class="info">lovely peppa pig makes me feel happy<span>
+  <button><i class="fas fa-sort-down"></i></button>
+  <span class="views">뷰수, 현재일자 기준으로 지난 게시시간</span>
+  </div>
+
+  <section class="buttons">
+    <button><i class="far fa-thumbs-up">&nbsplike</i></button>
+    <button><i class="far fa-thumbs-down">&nbsphate</i></button>
+    <button><i class="fas fa-share">&nbspshare</i></button>
+    <button><i class="fas fa-plus">&nbspsave</i></button>
+    <button><i class="far fa-flag">&nbspreport</i></button>
+  </section>
+
+  <section class="uploader">
+    <img class="photo" width="40" height="40" src="/image/KakaoTalk_20210527_212525252.jpg">
+    <span class="channel"> bon coding<span>
+    <span class="subscribers">현구독자수</span>
+    <span class="subscribe state">구독상태</span>
+    </section>
+
+<section class="upnext">
+<span class="text">up next</span>
+<div>
+  <iframe  src="/video/KakaoTalk_20210603_221111651.mp"></iframe>
+  <span class="info">fly bon</span>
+  <button><i class="fas fa-sort-down"></i></button>
 </div>
-
-  <div class="button">
-    <li><i class="far fa-thumbs-up">&nbsplike</i></li>
-    <li><i class="far fa-thumbs-down">&nbsphate</i></li>
-    <li><i class="fas fa-share">&nbspshare</i></li>
-    <li><i class="fas fa-plus">&nbspsave</i></li>
-    <li><i class="far fa-flag">&nbspreport</i></li>
-  </div>
-
-  <div class="uploader">
-    <li class="photo"><img width="30" height="30" src="https://images.unsplash.com/photo-1622237522665-f25c0139ab06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnwxMDc0MjU3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"></li>
-    <li class="channel,subscribers"> bon coding ,현구독자수</li>
-    <li class="subscribe state">구독상태</li>
-  </div>
-
-<footer>
-  <div class="upnext">
-    <li>up next</li>
-    <li><iframe width="100" height="50" src="https://www.youtube.com/embed/ydmNReP16V4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-    <li><iframe width="100" height="50" src="https://www.youtube.com/embed/ydmNReP16V4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-    <li>boncoding,뷰수</li>
-  </div>
-</footer>
+<div>
+  <iframe  src="/video/KakaoTalk_20210603_221111651.mp"></iframe>
+  <span class="info">high bon</span>
+  <button><i class="fas fa-sort-down"></i></button>
+</div>
+<div>
+  <iframe  src="/video/KakaoTalk_20210603_221111651.mp"></iframe>
+  <span class="info">high bon</span>
+  <button><i class="fas fa-sort-down"></i></button>
+</section>
+  <span>boncoding,뷰수</span>
+  </body>
 </html>
