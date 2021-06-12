@@ -6,7 +6,10 @@
     --blue-color:rgb(76, 76, 187);
     --gray-color:rgb(148, 141, 141);
     /* size */
-    --side-padding:10px;
+    /* 위 오른쪽 아래 왼쪽 순 */
+    --margin-side: 0px 20px 0px 20px;
+    --padding:0px 0px 3px 0px;
+    --buttom-padding:10px 0px 10px 0px
     --avatar-size:10px;
     /* font-size */
     --font-large:18px;
@@ -14,17 +17,44 @@
     --font-small:12px; 
     --font-micro:10px;
     /* Interval */
-    padding: 15;
-  }
+}
   *{
-    padding:0;
     margin:0;
-    box-sizing:border-box;
+    box-sizing: border-box;
   }
+  article{
+   margin:var(--margin-side);
+ }
+/* header */
+ header{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black-color);
+}
+ .header div{
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+.fa-youtube{
+  color:var(--red-color);
+  justify-content: space-between;
+ }
+ .sitename{
+   color:var(--white-color);
+ }
+ 
+ .fa-search {
+   color:var(--white-color);
+ }
+ .fa-ellipsis-v{
+   color:var(--white-color);
+ }
+ 
+ 
 .header button,
 .header button:focus{
   background-color: var(--black-color);
-
 }
 button,
 button:focus{
@@ -34,48 +64,57 @@ button:focus{
   background-color:var(--white-color);
 }
 
+/* main-screen */
+.main_screen{
+  width:100%;
+  height:100%;
+  position: sticky;
+  top: 0; 
+}  
+
 body{
   font-family: roboto;
 }
 
-header{
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--black-color);
-}
-.fa-youtube{
- color:var(--red-color);
-}
-.sitename{
-  color:var(--white-color);
-}
-.fa-search {
-  color:var(--white-color);
-}
-.fa-ellipsis-v{
-  color:var(--white-color);
-}
-iframe{
-  width:100%;
-  height:100%;
+
+/* bottons */
+.buttons{
+  padding: var(--buttom-padding);
 }
 .button{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
-  font-size: 2px;
 }
+
+/* uploader */
 .uploader{
   display: flex;
   list-style: none;
-  font-size: 2px;
+  padding-top: 10px;
+  font-size: var(--font-micro);
+  padding: var(--buttom-padding);
 }
 .photo{
   width: 10;
   height:10;
   border-radius: 50%;
 }
+/* upnext */
+.text{
+  font-size: var(--font-micro);
+}
 .upnext div{
   display: flex;
+  font-size: var(--font-small);
 }
-
+metadata{
+  padding:var(--padding);
+}
+.views{
+  font-size: var(--font-micro);
+  padding:var(--padding);
+}
+div{
+  display: flex;
+}
