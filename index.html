@@ -1,80 +1,102 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="style.css">
-  <title>bontube</title>
-</head>
-<script src="https://kit.fontawesome.com/d65e7d19b8.js" crossorigin="anonymous"></script>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>bontube</title>
+  </head>
+  <script
+    src="https://kit.fontawesome.com/d65e7d19b8.js"
+    crossorigin="anonymous"
+  ></script>
 
   <header class="header">
-   <div>
-    <button><i class="fab fa-youtube"></i></button>
-    <button class="sitename">Bontube</button>
-   </div>
-   <div>
+    <div>
+      <button><i class="fab fa-youtube"></i></button>
+      <button class="sitename">Bontube</button>
+    </div>
+    <div>
       <button><i class="fas fa-search"></i></button>
       <button><i class="fas fa-ellipsis-v"></i></button>
     </div>
   </header>
 
-
   <body>
-  <section class="main">
-    <embed src="/video/KakaoTalk_20210603_221111651.mp4">
-  
-<article>
-  <div class="hashtag">
-      <button>#lol lol </button>
+    <div class="main">
+      <video class="player" controls>
+        <source src="video/video.mp4" />
+      </video>
+    </div>
+
+    <span class="hashtag">
+      <button>#lol lol</button>
       <button>#life</button>
-      <button>#is alone</button> 
-  </div>
-  <div>
-    <span class="info">lovely peppa pig makes me feel happy<span>
-    <button><i class="fas fa-sort-down"></i></button>
-  <div>
-    <span class="views">뷰수, 현재일자 기준으로 지난 게시시간</span>
-  </div>
-</section>
+      <button>#is alone</button>
+    </span>
 
-  <section class="buttons">
-    <button><i class="far fa-thumbs-up">&nbsplike</i></button>
-    <button><i class="far fa-thumbs-down">&nbsphate</i></button>
-    <button><i class="fas fa-share">&nbspshare</i></button>
-    <button><i class="fas fa-plus">&nbspsave</i></button>
-    <button><i class="far fa-flag">&nbspreport</i></button>
-  </section>
+    <div class="content">
+      <span class="text">we are the best friend in the world</span>
+      <button><i class="fas fa-sort-down"></i></button>
+      <div class="views">32M 2021.06.16</div>
+    </div>
 
-  <section class="uploader">
-    <img class="photo" width="40" height="40" src="/image/KakaoTalk_20210527_212525252.jpg">
-    <span class="channel"> bon coding<span>
-    <span class="subscribers">현구독자수</span>
-    <span class="subscribe state">구독상태</span>
-  </section>
+    <section class="buttons">
+      <button><i class="far fa-thumbs-up">like</i></button>
+      <button><i class="far fa-thumbs-down">hate</i></button>
+      <button><i class="fas fa-share">share</i></button>
+      <button><i class="fas fa-plus">save</i></button>
+      <button><i class="far fa-flag">report</i></button>
+    </section>
 
- 
-    <section class="upnext">up next
-    <div>
-      <embed src="/video/KakaoTalk_20210603_221111651.mp">
-      <span class="info">fly bon</span>
-      <button><i class="fas fa-sort-down"></i></button>
-    </div>
-    <div>
-      <embed src="/video/KakaoTalk_20210603_221111651.mp">
-      <span class="info">high bon</span>
-      <button><i class="fas fa-sort-down"></i></button>
-    </div>
-    <div>
-      <embed src="/video/KakaoTalk_20210603_221111651.mp">
-      <span class="info">high bon</span>
-      <button><i class="fas fa-sort-down"></i></button>
-    </div>
-    <span>boncoding,뷰수</span>
-  </section>
-</article>
+    <section class="uploader">
+      <div class="uploader2">
+        <div class="uploader3">
+        <img
+          class="photo"
+          width="40"
+          height="40"
+          src="/image/KakaoTalk_20210527_212525252.jpg"
+        />
+      </div>
+        <div class="uploader3">
+          <div class="uploader4">
+          <span>bon coding</span>
+          <span>321m</span>
+          </div>
+        </div>
+         </div>
+        <div class ="uploader2">
+            <button class="sub">subcribers</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="upnext">
+      <span>up next</span>
+      <div>
+        <video class="subplayer1" controls>
+          <source src="video/video.mp4" />
+        </video>
+        <span class="info">fly bon</span>
+        <button><i class="fas fa-sort-down"></i></button>
+      </div>
+      <div>
+        <video class="subplayer2" controls>
+          <source src="video/video.mp4" />
+        </video>
+        <span class="info">high bon</span>
+        <button><i class="fas fa-sort-down"></i></button>
+      </div>
+      <div>
+        <video class="subplayer3" controls>
+          <source src="video/video.mp4" />
+        </video>
+        <span class="info">high bon</span>
+        <button><i class="fas fa-sort-down"></i></button>
+      </div>
+      <span>boncoding,뷰수</span>
+    </section>
   </body>
-
 </html>
