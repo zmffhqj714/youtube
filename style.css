@@ -67,7 +67,7 @@ button:focus {
   position: sticky;
   top: 0px;
   width: 100%;
-  height: 250px;
+  height: 30%;
   max-height: 250px;
   background-color: var(--black-color);
 }
@@ -144,17 +144,33 @@ body {
   margin: var(--margin-side);
   font-size: var(--font-small);
 }
-.upnext div {
+
+.upnext .item {
   display: flex;
+  align-items: center;
   font-size: var(--font-small);
+  padding: var(--padding-updown);
 }
-section .upnext video {
+
+.upnext .subplayer {
+  flex: 1 1 40%;
+  top: 0px;
   width: 100%;
   height: 100px;
   max-height: 250px;
   background-color: var(--black-color);
 }
-div .views {
+
+.upnext .info {
+  flex: 1 1 60%;
+  align-self: flex-start;
+  padding: var(--padding-side);
+}
+.upnext .i {
+  flex: 1 1 5%;
+}
+
+.nextupinfo {
   font-size: var(--font-atom);
   padding: var(--padding);
 }
